@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h3><a href="/">回到首页</a></h3>
+<h1>博文列表</h1>
+<!-- Jinja模板语法 -->
+    {% for blog in blogs%}
+        <h3><a href="/blog/{{blog.id}}">{{blog.title}}</a></h3>
+    {% endfor %}
+</body>
+</html>
